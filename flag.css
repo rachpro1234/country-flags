@@ -1,32 +1,77 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(221, 239, 255);
+  display: grid;
+  place-items: center;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+h3 {
+  position: absolute;
+  text-align: center;
+  top: 20px;
+}
+
+/* Main Style Stars from here  */
+.flags {
+  display: flex;
+  gap: 20px;
+  text-transform: capitalize;
+}
+.flag {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+}
+.germany {
+  background: linear-gradient(#000 33%, #de0000 33%, #de0000 67%, #ffcf00 0);
+}
+
+.france {
+  background: linear-gradient(
+    to right,
+    blue 33%,
+    white 33%,
+    white 66%,
+    red 66%
+  );
+}
+
+.italy {
+  background: linear-gradient(
+    to right,
+    green 33%,
+    white 33%,
+    white 66%,
+    red 66%
+  );
+}
+
+.holland {
+  background: linear-gradient(
+    180deg,
+    #ae1c28,
+    #ae1c28 68px,
+    white 44px,
+    white 130px,
+    #21468b -3px,
+    #21468b 13px
+  );
+}
+
+@media screen and (max-width: 600px) {
+  .flags {
+    flex-direction: column;
   }
-  
-  body {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(221, 239, 255);
-    display: grid;
-    place-items: center;
-    font-family: cursive;
-    font-weight: bold;
-  }
-  
-  h3 {
-    position: absolute;
-    text-align: center;
-    top: 20px;
-  }
-  
-  /* Main Style Stars from here  */
-  .flag {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-  }
-  .germany {
-    background: linear-gradient(#000 33%, #de0000 33%, #de0000 67%, #ffcf00 0);
-  }
+}
